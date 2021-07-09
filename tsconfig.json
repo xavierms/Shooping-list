@@ -5,8 +5,8 @@
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "noImplicitReturns": true,
+    //"strict": true,             //-XM- 9/7/2021 -Desactivé esta opción y cambie el "noImplicitReturns" a false para poder hacer que el mecanografiado tolere parámetros sin declarar su tipo 
+    "noImplicitReturns": false,
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "declaration": false,
