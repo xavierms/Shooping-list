@@ -15,7 +15,7 @@ export class ItemsComponent implements OnInit {
   constructor(public itemService:ItemService) { }
   
   
-
+  
    ngOnInit(): void {
     // this.items =this.itemService.getItems();
       this.itemService.getItems().subscribe(data => {
@@ -41,9 +41,7 @@ export class ItemsComponent implements OnInit {
                  .map(item => item.quantity * item.price)
                 .reduce( (acc, item) => acc += item, 0);
 
-                console.log(this.total);
-                
-                
+                console.log(this.total);          
                 
    }
    

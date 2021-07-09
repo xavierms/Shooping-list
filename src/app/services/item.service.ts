@@ -41,7 +41,7 @@ export class ItemService {
       completed: false
     }
   ];
-  filterItems='';
+  //filterItems='';
   constructor(private http:HttpClient) { }
   
   getItems():Observable<Item[]>{

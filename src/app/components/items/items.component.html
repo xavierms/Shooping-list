@@ -4,24 +4,22 @@
     
     <app-total mensaje="Total por pagar: " [total]="total" ></app-total>
 
-    <form>
+    <!-- <form>
         <div class="form-group">      
             <div class="input-group"> 
               <div class="input-group-text bg-white">                                
                   <i class="fa fa-search"></i>        
               </div>
-            
-              <input type="text" class="form-control" name="filterItems" placeholder="Search" [(ngModel)]="itemService.filterItems"> 
+              <input type="text" class="form-control" name="filterItems" placeholder="Search" [(ngModel)]="itemServices.filterItems"> 
             </div> 
-            </div>
-        
-        </form>
+        </div>     
+    </form> -->
 
     <app-item 
-    *ngFor="let item of items | filter:'title':'filter.data' " 
+    *ngFor="let item of items  " 
     [item]="item" 
     (deleteItem)="deleteItem($event)"
-    (toggleItem)="toggleItem($event)"></app-item>
+    (toggleItem)="toggleItem($event)"></app-item>   <!--  | filter:'title':'filter.filterItems'  -->
     
 </div>
 
