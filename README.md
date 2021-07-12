@@ -1,6 +1,9 @@
 
 # ShoppingList
 
+![Screenshot for Github repository](https://res.cloudinary.com/dr1hlsicm/image/upload/v1626090791/img-shopping-list_dr2vyr.png)
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.1.
 
 ## Development server
